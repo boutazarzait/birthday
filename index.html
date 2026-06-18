@@ -26,13 +26,13 @@
 <div id="card-inside">
 <div class="wrap wishesFont">
     <center>
-      <p>Wishing you a very Happy Birthday sami! May god bless you.</p>
-      <p> You might be wondering, who is this girl who had sent me this virtual card! Let me take a moment to introduce myself. I am a techie just like you! I am one of the regular readers of your posts you add on LinkedIn or twitter. 
-        <p>  Thankyou 😊😊
+      <p>Wishing you a very Happy Birthday carino! May god bless you.</p>
+      <p> You might be wondering, who is this girl who had sent me this virtual card! Let me take a moment to introduce myself. I am ur EX 🙂 Hahahahaha udb tasano dialk❤️❤️  i hope teajbk had tkhrbi9a li dert lik u je pense hada ahssan birth dwztih fhyatk hitach ana meak bien surrrr 😌 . 
+        <p> i hope you have the most amazing and special day as you are  uela slamtk wlity 9dy db n9der n9bel ntzwj bik mhm sf awili anb9a andwi nchallah tb9a dima Tla9a mea nas zwenin bhali ubhalk 😊😊
        </p>
       </center>
-<p class="signed">With Best Wishes 
-    <br> ur love Hajar
+<p class="signed">With Best Wishes my sweet boy (fi itar sada9a dialna 🙂)
+    <br> ur Tasano Hajar 
   </p>
   
 </div>
@@ -62,5 +62,39 @@
 </div>
 </div>
 <script  src="js/index.js"></script>
+
+////
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="playMusic()" 
+style="position:fixed; bottom:20px; right:20px; padding:10px 15px; 
+background:#ff4d4d; color:white; border:none; border-radius:10px; cursor:pointer;">
+🎵 Play Music
+</button>
+
+<script>
+function playMusic() {
+  const music = document.getElementById("bgMusic");
+  music.play();
+
+  document.getElementById("musicBtn").style.display = "none";
+}
+
+window.addEventListener("load", () => {
+  const music = document.getElementById("bgMusic");
+
+  music.volume = 0.5; 
+
+  let playPromise = music.play();
+
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      document.getElementById("musicBtn").style.display = "block";
+    });
+  }
+});
+</script>
 </body>
 </html>
